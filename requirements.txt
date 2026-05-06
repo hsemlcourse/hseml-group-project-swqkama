@@ -25,4 +25,4 @@ notebook>=7.0.0
 
 xgboost
 lightgbm
-joblib.dump(model, "models/best_model.pkl")
+joblib
