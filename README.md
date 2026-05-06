@@ -73,4 +73,42 @@ pip install -r requirements.txt
 
 ## Отчёт
 
+---
+
+## CP2 Experiments
+
+Additional machine learning experiments were conducted using advanced ensemble methods and hyperparameter tuning.
+
+### Tested models
+
+- Logistic Regression
+- Random Forest
+- Gradient Boosting
+- Extra Trees
+- Support Vector Machine (SVM)
+- XGBoost
+
+### Hyperparameter tuning
+
+GridSearchCV was applied to Random Forest for parameter optimization.
+
+Best parameters:
+
+```python
+{'max_depth': None, 'n_estimators': 200}
+```
+
+### Final Results
+
+| Model | Accuracy | F1-score | ROC-AUC |
+|---|---|---|---|
+| Extra Trees | 0.8883 | 0.8276 | 0.9410 |
+| Random Forest tuned | 0.8883 | 0.8306 | 0.9409 |
+| XGBoost | 0.8885 | 0.8331 | 0.9406 |
+| Random Forest | 0.8877 | 0.8304 | 0.9404 |
+| Gradient Boosting | 0.8767 | 0.8082 | 0.9274 |
+| SVM | 0.8289 | 0.7098 | 0.8698 |
+| Logistic Regression | 0.7981 | 0.6792 | 0.8446 |
+
+The best result was achieved by the Extra Trees model.
 Финальный отчёт будет находиться в `report/report.md`.
