@@ -75,11 +75,13 @@ pip install -r requirements.txt
 
 ---
 
-## CP2 Experiments
+---
 
-Additional machine learning experiments were conducted using advanced ensemble methods and hyperparameter tuning.
+## CP2 Эксперименты
 
-### Tested models
+В рамках второго чекпоинта были проведены дополнительные эксперименты с более сложными моделями машинного обучения и подбором гиперпараметров.
+
+### Протестированные модели
 
 - Logistic Regression
 - Random Forest
@@ -88,19 +90,19 @@ Additional machine learning experiments were conducted using advanced ensemble m
 - Support Vector Machine (SVM)
 - XGBoost
 
-### Hyperparameter tuning
+### Подбор гиперпараметров
 
-GridSearchCV was applied to Random Forest for parameter optimization.
+Для модели Random Forest был применён GridSearchCV.
 
-Best parameters:
+Лучшие параметры:
 
 ```python
 {'max_depth': None, 'n_estimators': 200}
 ```
 
-### Final Results
+### Итоговые результаты
 
-| Model | Accuracy | F1-score | ROC-AUC |
+| Модель | Accuracy | F1-score | ROC-AUC |
 |---|---|---|---|
 | Extra Trees | 0.8883 | 0.8276 | 0.9410 |
 | Random Forest tuned | 0.8883 | 0.8306 | 0.9409 |
@@ -110,5 +112,4 @@ Best parameters:
 | SVM | 0.8289 | 0.7098 | 0.8698 |
 | Logistic Regression | 0.7981 | 0.6792 | 0.8446 |
 
-The best result was achieved by the Extra Trees model.
-Финальный отчёт будет находиться в `report/report.md`.
+Лучший результат показала модель Extra Trees.
