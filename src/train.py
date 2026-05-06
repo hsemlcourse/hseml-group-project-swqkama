@@ -36,7 +36,7 @@ df.columns = [
     "class",
 ]
 
-# Encode target
+
 encoder = LabelEncoder()
 df["class"] = encoder.fit_transform(df["class"])
 
